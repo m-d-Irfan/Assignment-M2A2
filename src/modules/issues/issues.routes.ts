@@ -1,6 +1,6 @@
 import { Router } from 'express';
 import { create, getAll, getOne, update, remove } from './issues.controller';
-import { authenticate, authorize } from '../../middleware/auth';
+import { authenticate, authorize } from '../../middlewares/auth';
 
 const router = Router();
 // Public
