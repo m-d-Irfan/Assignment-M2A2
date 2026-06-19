@@ -32,7 +32,7 @@ const attachReporters = async (issues: Issue[]): Promise<IssueWithReporter[]> =>
   );
 // Build a map
   const reporterMap = new Map<number, Reporter>(
-    result.rows.map((r) => [r.id, r]),
+    result.rows.map((r: any) => [r.id, r]),
   );
 
 //replace reporter_id with reporter object
